@@ -1,9 +1,8 @@
 <?php
 
-namespace Insenseanalytics\LaravelNovaPermission;
+namespace Boydreams\LaravelNovaPermission;
 
 use Laravel\Nova\Resource;
-use Spatie\Permission\Models\Role as SpatieRole;
 
 class Role extends Resource
 {
@@ -14,7 +13,7 @@ class Role extends Resource
 	 *
 	 * @var string
 	 */
-	public static $model = SpatieRole::class;
+    public static $model = \App\Role::class;
 
 	/**
 	 * The single value that should be used to represent the resource when being displayed.
